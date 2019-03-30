@@ -72,17 +72,17 @@ hr{
 
   } 
   
-  .topNavBar  nav > ul {
+.topNavBar  nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  .topNavBar  nav > ul > li {
+}
+.topNavBar  nav > ul > li {
     float: left;
     margin-left: 13px;
     margin-right: 22px;
     position:relative;
-   }
+}
 .topNavBar  nav > ul > li >a {
     font-size: 12px;
     font-weight: bold;
@@ -148,56 +148,28 @@ hr{
     margin-right:auto;
     background-color: #ffff;
     box-shadow:0px 1px 5px 0px rgba(0,0,0,0.5);
-    /* animation: divMove 0.5s; */
 }
-/* @keyframes divMove{
-    from{margin-top:-185px}
-    to{margin-top:-285px}
-} */
-#pic img{
-    widows: 290px;
-    height: 352px;
-}
-#siteAbout .welcome {
-    background:#E8676B;
-    color: white;
-    display: inline-block;
-    padding: 4px 16px;
-    line-height:22px;
-    position: relative;
-    margin-bottom:10px;
-}
-#siteAbout .welcome .triangle{
-    border: 8px solid transparent;
-    width:0px; 
-    border-left-color: #e6686a;
-    border-top-width: 0px;
-    display:block;
-    position: absolute;
-    top:100%;
-    left:4px;
-    }
-#siteAbout .picture{
+
+#pic{
+    border-radius: 4px;
+    width: 290px;
+    height: 360px;
+    overflow: hidden;
     float: left;
-    
 }
-#siteAbout .picture:hover{
-    
-    transform: scale(1.01,1.01); 
-    
-   
-}
+
+
 #siteAbout .text{
     float: left;
     margin-left: 65px;
-    width:400px;
+    width:50%;
 }
-#siteAbout .text h1{
-    margin-top: 16px;
+
+.text h1,.text p{
+    margin-top: 20px;
+    text-align: center;
 }
-#siteAbout .text p{
-    margin-top: 8px;
-}
+
 #siteAbout .text hr{
     margin: 20px 0;
 }
@@ -205,39 +177,34 @@ hr{
     padding:50px; 
     padding-bottom: 40px;
 }
-#siteAbout table{
-    float: left;
-    padding: 5px 0;
-    text-decoration: none;
+
+#text-info li ul li{
+    display:inline-block;
 }
-#siteAbout table .ABC{
-    width: 150px;
+
+#text-info li ul .pro{
+    margin:20px 0 0 40px;
+    width: 30%;
     font-weight: bold;
 }
-#siteAbout table .abc{
-    width: 180px;
-    color: #AFB2B7;
+#text-info li ul .val{
+    color: rgb(148, 147, 147);
 }
-#siteAbout table .highlight{
 
-    background: rgba(202, 202, 202, 0.548)  ;
-
-}
 #siteAbout .media{
-    height: 80px;
-    background: rgb(184, 183, 183);
+    background-color: rgb(151, 148, 148);
     text-align: center;
-    margin-top:  auto;
 }
 #siteAbout .media img{
+    border: solid 2px transparent;
     display:inline-block;
     width:40px;
-    margin:16px 16px;
+    margin:20px 16px;
     border-radius:25px;
     
 }
 #siteAbout .media img:hover{
-    background: #f7f5f5;
+    background: #cccaca;
     transition: 0.3s;
 }
 
@@ -252,15 +219,8 @@ hr{
 
 div.wrapper{
     max-width: 940px;
-    margin-top: 60px;
-    margin-left:auto;
-    margin-right:auto;
-    transition: all 0.5s;
-    
+    margin: 30px auto;
 }
-div.wrapper.offset{
-    transform: translateY(100px);
-} 
 
 
 div.wrapper h2{

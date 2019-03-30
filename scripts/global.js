@@ -35,20 +35,7 @@ var imgArr = [
     "images/picture3.jpg","images/picture4.jpg",
     "images/picture5.jpg"
     ];
-// 头像图片切换
-function changePic(){
-    var pic = document.getElementById("pic");
-    var potraitPic = pic.getElementsByTagName("img")[0];
-    index = 0;
-    potraitPic.onclick = function(){
-        if(index < imgArr.length-1){
-            index++;
-        }else{
-            index = 0
-        }
-        potraitPic.src = imgArr[index];
-    }
-}
+
 
 // 高亮显示鼠标指定区域
 function highlightRows(){
@@ -136,18 +123,6 @@ function headerSub(){
     }
 }
 
-
-// 给每个单元DIV模块添加offset类
-function wrapAddOffset(){
-    var wrap = document.getElementsByClassName("wrapper");
-    for(var i=0; i<wrap.length;i++){
-        wrap[i].classList.add("offset");
-        }
-}
-    
-
-addLoadEvent(changePic);
-addLoadEvent(wrapAddOffset);
 addLoadEvent(highlightSub);
 addLoadEvent(highlightRows);
 addLoadEvent(headerSub);
