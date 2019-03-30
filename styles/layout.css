@@ -45,7 +45,7 @@ hr{
 }
 
 .clearfix:after{
-    content:".";
+    content:"";
     display:block;
     height:0;
     clear:both;
@@ -53,7 +53,7 @@ hr{
 }
 
 .topNavBar.sticky{
-    background: rgba(255, 255, 255, 0.897);
+    background: rgb(255, 255, 255);
     padding:10px 0;
     z-index: 1;
     box-shadow:0 0 10px rgba(0,0,0,0.25);
@@ -219,9 +219,12 @@ hr{
 
 div.wrapper{
     max-width: 940px;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
+.slipe{
+    height: 80px;
+}
 
 div.wrapper h2{
     text-align: center;
