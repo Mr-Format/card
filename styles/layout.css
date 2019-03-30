@@ -1,51 +1,49 @@
 body{
     background: #EFEFEF; 
-    /* margin 简写属性在一个声明中设置所有外边距属性。
-    该属性可以有 1 到 4 个值,按顺序是上 右  下  左 */
     margin: 0;
+    padd: 0;
 }
 
-.topNavBar .logo{
-    font-family: 'Arial Black';
-}
-.topNavBar .logo .tx{
-    font-size: 22px;
-    margin-right: 6px ;
-    color:rgb(204, 99, 99);
-}
-.topNavBar .logo  .edu{
-    font-size: 20px;
-    color:rgb(125, 127, 128);
-   }
-a{
-    /* inherit 继承 */
-    color: inherit;
-    /* text-decoration 这个属性允许对文本设置某种效果，
-    如加下划线。如果后代元素没有自己的装饰，
-    祖先元素上设置的装饰会“延伸”到后代元素中。none表示默认样式 */
-    text-decoration: none;
-}
 h1,h2,h3,h4,p,dl,dt,dd,li,ul{
-    margin:0;
-    /* padding 内边距 */
-    padding:0;
+    margin:0;                
+    padding:0;               
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
 }
 
 ul,ol{ 
-    /* list-style 简写属性在一个声明中设置所有的列表属性 */
     list-style: none;
 }
+
 hr{
     height:0;
-    /* border设置边框属性,可以按顺序设置如下属性：
-    border-width  border-style  border-color */
     border:none;
-    /* border-top 把上边框的所有属性设置到一个声明中,
-    属性设置顺序和border相同 ,solid表示实线 */
     border-top:1px solid #DEDEDE;
 }
+                            
+.topNavBar {
+    position:fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    color:#C3C4C7;
+  } 
 
-/* 清楚块级浮动  不知道什么意思 */
+.topNavBar .logo{
+    font-family: 'Arial Black';
+    font-size: 22px;
+}
+.topNavBar .logo .Format{
+    margin-right: 6px ;
+    color:rgb(204, 99, 99);
+}
+.topNavBar .logo  .card{
+    color:rgb(125, 127, 128);
+}
+
 .clearfix:after{
     content:".";
     display:block;
@@ -54,31 +52,6 @@ hr{
     visibility:hidden
 }
 
-
-.topNavBar {
-    /* position 属性规定元素的定位类型.
-    fixed表示生成绝对定位的元素，相对于浏览器窗口进行定位。
-    元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定 */
-    position:fixed;
-    /* top 属性规定元素的顶部边缘。
-    该属性定义了一个定位元素的上外边距边界与其包含块上边界之间的偏移。 */
-    top: 0;
-    left:0;
-    /* 上内边距 */
-    padding-top: 20px;
-    /* 下内边距 */
-    padding-bottom: 20px;
-    width: 100%;
-
-    /* transition 属性是一个简写属性，用于设置四个过渡属性：
-    transition-property
-    transition-duration
-    transition-timing-function
-    transition-delay */
-    /* transition:0.5s; */
-    color:#C3C4C7;
-  } 
-
 .topNavBar.sticky{
     background: rgba(255, 255, 255, 0.897);
     padding:10px 0;
@@ -86,7 +59,6 @@ hr{
     box-shadow:0 0 10px rgba(0,0,0,0.25);
     color:#3d4451;
 }
-
 
 .topNavBar-inner{
     padding:0 16px;;
